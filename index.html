@@ -9,6 +9,11 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
+
+
+		<div class="mrk_ect_tooltip_box noselect class_hidden">tolltip is nil</div>
+
+
 		<div class="starting_page_desc">
 			<div class="starting_page_card">
 				<div class="starting_page_card_title">"Who Am I?"</div>
@@ -62,15 +67,15 @@
 			<div id="game_settings">
 				<div id="game_players">
 					<!-- <div id="pcount_label">Player Amount</div> -->
-					<input max="10" value="10" type="number">
+					<input value="10" min="2" max="10" type="number">
 				</div>
 
 				<div id="game_start">
-					<div class="bpress">Play</div>
+					<div mrk_ect_tooltip="Show random cards to play with your friends" class="bpress">Play</div>
 				</div>
 
 				<div id="show_full_pool">
-					<div class="bpress">Show Pool</div>
+					<div mrk_ect_tooltip="Show all available cards" class="bpress">Show Pool</div>
 				</div>
 			</div>
 
