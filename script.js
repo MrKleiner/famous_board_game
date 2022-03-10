@@ -175,6 +175,12 @@ document.addEventListener('click', event => {
     const pool = event.target.closest('#show_full_pool .bpress');
     if (pool) { showpool() }
 
+    // pool
+    const helper = event.target.closest('#game_players input');
+    if (helper) {
+    	$(helper).select();
+    }
+
 });
 
 
